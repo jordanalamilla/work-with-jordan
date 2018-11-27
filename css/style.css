@@ -1,0 +1,221 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/*Eric Meyers CSS Reset*/
+
+/*Custom CSS*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #FCFCFC;
+}
+
+#sig {
+    width: 35px;
+    padding: 5vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#sig img {
+    max-width: 100%;
+}
+
+.container {
+    /* background-color: #EEE; */
+    width: 60%;
+    margin: 30vh auto;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 2;
+}
+
+#nav-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+nav {
+    /* width: 60%; */
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#nav-logo {
+    position: fixed;
+    width: 3em;
+    display: inline-block;
+    margin-left: -200px;
+    /* padding: 5em; */
+}
+
+#nav-logo img {
+    max-width: 100%;
+}
+
+#nav-links, #nav-logo {
+    /* padding: 5em 0 1em 0; */
+}
+
+#nav-links a {
+    /* float: right; */
+    line-height: 3em;
+    color: #000;
+    text-decoration: none;
+    margin: 0 0.5em;
+    /* text-transform: lowercase; */
+    /* font-weight: 400; */
+    /* font-size: 1.5em; */
+}
+
+#nav-links a:first-child {
+    margin: 0 0.5em 0 0;
+}
+
+#intro {
+    position: relative;
+    /* height: 620px; */
+    /* margin: calc((100vh - 620px) / 2) auto; */
+    margin-top: 100vh;
+    font-family: sans-serif;
+}
+
+#hero {
+    max-width: 100%;position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#hero img {
+    max-width: 100%;
+}
+
+#intro p {
+    text-align: left;
+}
+
+#sentiment {
+    color: #FFF;
+    padding: 25vh 10vh;
+    width: calc(80% - 20vh);
+    margin: 20vh auto;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+
+    background-image: url('/images/artist.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#sentiment img {
+    max-width: 100%;
+}
+
+#all-services {
+    display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(2, 1fr);
+
+    line-height: 2;
+    margin-top: 50px;
+}
+
+h3 {
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#service p {
+    color: #555;
+}
+
+#contact {
+    display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#get-started {
+    /* text-align: left; */
+}
+
+#contact img {
+    max-width: 350px;
+}
+
+#contact h2 {
+    /* text-align: left; */
+    padding: 20px 0;
+    /* font-size: 2em; */
+}
+
+#contact p {
+    /* font-size: 1.5em; */
+    line-height: 2;
+    color: #555;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #874040;
+    padding-bottom: 0.2em;
+    font-size: 1.5em;
+    margin-top: 2em;
+    display: inline-block;
+    border-bottom: 1px dotted #AAA;
+}
+/* 
+#contact a {
+    text-decoration: none;
+    color: #385123;
+    background-color: #ebf6ed;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 400;
+    border: 1px solid #53793c;
+    margin-top: 2em;
+    display: inline-block;
+} */
+
+#footer-container {
+    background-color: #EEE;
+    padding: 0;
+}
+
+footer {
+    color: #777;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5vh 0;
+    line-height: 2;
+
+    display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+h4 span {
+    /* font-weight: bold; */
+    font-size: 1.5em;
+}
+
+footer div a {
+    display: block;
+    /* margin-bottom: 20px; */
+    text-decoration: none;
+    color: #777;
+}
