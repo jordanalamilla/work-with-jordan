@@ -15,6 +15,7 @@ body {
 
 .container {
     width: 60%;
+    max-width: 1000px;
     margin: 30vh auto;
 }
 
@@ -222,22 +223,29 @@ footer div a {
     }
 
     h1 { font-size: 1em; }
-    h2 { font-size: 1.5em; }
+    h2 { font-size: 2em; }
 
     #contact {
         text-align: center;
+    }
+
+    #contact h2 {
+        padding: 0;
     }
 }
 
 @media only screen and ( max-width: 400px ) {
 
-    h2 {
+    #sentiment {
+        padding: 10vh 0;
+    }
+
+    #sentiment h2 {
         font-size: 1em;
         font-weight: 400;
     }
 
-    #contact h2{
+    #contact h2 {
         font-size: 1.5em;
-        /* font-weight: 300; */
     }
 }
