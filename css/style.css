@@ -3,6 +3,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*Custom CSS*/
 
+/* ========== COMMON ========== */
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -10,9 +12,28 @@ body {
     background-color: #FCFCFC;
 }
 
+
+.container {
+    width: 60%;
+    margin: 30vh auto;
+}
+
+/* ========== GRIDS ========== */
+
+.grid-2, .grid-3 {
+    display: grid;
+	grid-gap: 50px;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* ========== MINI SIGNATURE ========== */
+
 #sig {
     width: 35px;
-    padding: 5vh;
+    padding: 50px;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -20,12 +41,6 @@ body {
 
 #sig img {
     max-width: 100%;
-}
-
-.container {
-    /* background-color: #EEE; */
-    width: 60%;
-    margin: 30vh auto;
 }
 
 h2 {
@@ -45,53 +60,11 @@ h1 {
     margin-bottom: 20px;
 }
 
-nav {
-    /* width: 60%; */
-    margin: 0 auto;
-    overflow: auto;
-}
-
-#nav-logo {
-    position: fixed;
-    width: 3em;
-    display: inline-block;
-    margin-left: -200px;
-    /* padding: 5em; */
-}
-
-#nav-logo img {
-    max-width: 100%;
-}
-
-#nav-links, #nav-logo {
-    /* padding: 5em 0 1em 0; */
-}
-
-#nav-links a {
-    /* float: right; */
-    line-height: 3em;
-    color: #000;
-    text-decoration: none;
-    margin: 0 0.5em;
-    /* text-transform: lowercase; */
-    /* font-weight: 400; */
-    /* font-size: 1.5em; */
-}
-
-#nav-links a:first-child {
-    margin: 0 0.5em 0 0;
-}
-
-#intro {
-    position: relative;
-    /* height: 620px; */
-    /* margin: calc((100vh - 620px) / 2) auto; */
-    margin-top: 100vh;
-    font-family: sans-serif;
-}
+/* ========== HERO ========== */
 
 #hero {
-    max-width: 100%;position: fixed;
+    position: fixed;
+    max-width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -101,9 +74,39 @@ nav {
     max-width: 100%;
 }
 
+nav {
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#nav-logo img {
+    max-width: 100%;
+}
+
+#nav-links a {
+    line-height: 3em;
+    color: #000;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+#nav-links a:first-child {
+    margin: 0 0.5em 0 0;
+}
+
+/* ========== INTRO ========== */
+
+#intro {
+    position: relative;
+    margin-top: 100vh;
+    font-family: sans-serif;
+}
+
 #intro p {
     text-align: left;
 }
+
+/* ========== SENTIMENT ========== */
 
 #sentiment {
     color: #FFF;
@@ -123,11 +126,9 @@ nav {
     max-width: 100%;
 }
 
-#all-services {
-    display: grid;
-	grid-gap: 50px;
-	grid-template-columns: repeat(2, 1fr);
+/* ========== SERVICES ========== */
 
+#all-services {
     line-height: 2;
     margin-top: 50px;
 }
@@ -142,28 +143,17 @@ h3 {
     color: #555;
 }
 
-#contact {
-    display: grid;
-	grid-gap: 50px;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-#get-started {
-    /* text-align: left; */
-}
+/* ========== CONTACT ========== */
 
 #contact img {
     max-width: 350px;
 }
 
 #contact h2 {
-    /* text-align: left; */
     padding: 20px 0;
-    /* font-size: 2em; */
 }
 
 #contact p {
-    /* font-size: 1.5em; */
     line-height: 2;
     color: #555;
 }
@@ -177,19 +167,8 @@ h3 {
     display: inline-block;
     border-bottom: 1px dotted #AAA;
 }
-/* 
-#contact a {
-    text-decoration: none;
-    color: #385123;
-    background-color: #ebf6ed;
-    padding: 1em;
-    border-radius: 5px;
-    font-size: 1.5em;
-    font-weight: 400;
-    border: 1px solid #53793c;
-    margin-top: 2em;
-    display: inline-block;
-} */
+
+/* ========== FOOTER ========== */
 
 #footer-container {
     background-color: #EEE;
@@ -202,20 +181,41 @@ footer {
     margin: 0 auto;
     padding: 5vh 0;
     line-height: 2;
-
-    display: grid;
-	grid-gap: 50px;
-	grid-template-columns: repeat(3, 1fr);
 }
 
 h4 span {
-    /* font-weight: bold; */
     font-size: 1.5em;
 }
 
 footer div a {
     display: block;
-    /* margin-bottom: 20px; */
     text-decoration: none;
     color: #777;
+}
+
+/* ========== MOBILE ========== */
+
+@media only screen and ( max-width: 1100px ) {
+
+    .container {
+        width: 80%;
+    }
+
+    #sentiment {
+        padding: 20vh 0;
+        width: 100%;
+        margin: 20vh auto;
+        border-radius: 0;
+    }
+}
+
+@media only screen and ( max-width: 800px ) {
+
+    .container {
+        width: 100%;
+    }
+
+    .grid-2, .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
