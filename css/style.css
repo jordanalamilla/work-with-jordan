@@ -26,7 +26,6 @@ body {
 }
 
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
-
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 
 /* ========== MINI SIGNATURE ========== */
@@ -64,7 +63,8 @@ h1 {
 
 #hero {
     position: fixed;
-    max-width: 100%;
+    text-align: center;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -146,6 +146,7 @@ h3 {
 /* ========== CONTACT ========== */
 
 #contact img {
+    width: 100%;
     max-width: 350px;
 }
 
@@ -212,10 +213,31 @@ footer div a {
 @media only screen and ( max-width: 800px ) {
 
     .container {
-        width: 100%;
+        width: 90%;
+        margin: 10vh auto;
     }
 
     .grid-2, .grid-3 {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1 { font-size: 1em; }
+    h2 { font-size: 1.5em; }
+
+    #contact {
+        text-align: center;
+    }
+}
+
+@media only screen and ( max-width: 400px ) {
+
+    h2 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    #contact h2{
+        font-size: 1.5em;
+        /* font-weight: 300; */
     }
 }
