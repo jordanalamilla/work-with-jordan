@@ -263,6 +263,8 @@ footer div a:hover {
 
 @media only screen and ( max-width: 400px ) {
 
+    h2{font-size:1.2em}
+
     #sentiment {
         padding: 10vh 0;
     }

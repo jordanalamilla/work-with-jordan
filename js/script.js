@@ -2,6 +2,7 @@ $( function() {
 
     // WEBSITE FADE IN EFFECT
     $( 'body' ).hide().delay(1500).fadeIn({ 'duration' : 1000 });
+    $( '#sig' ).hide();
 
     // TOGGLE LANDING PAGE
     $(window).scroll(() => {
